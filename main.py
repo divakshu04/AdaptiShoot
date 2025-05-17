@@ -103,11 +103,6 @@ def show_difficulty_menu():
 initial_difficulty = show_difficulty_menu()
 difficulty_level = initial_difficulty
 
-# --- Load Images ---
-player_image = pygame.image.load("blue-spaceship.png").convert_alpha()
-target_image = pygame.image.load("red-spaceship.png").convert_alpha()
-player_rect = player_image.get_rect(midbottom=(SCREEN_WIDTH // 2, SCREEN_HEIGHT - 20))
-
 class Target:
     def __init__(self, x, y, speed, difficulty):
         self.x = x
